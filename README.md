@@ -4,6 +4,17 @@ This is a project built with Deno to track the amount of visitors on different G
 
 The project relies on [countapi](https://countapi.xyz/).
 
-## WIP - More on this coming later.
+## Usage
 
-This is still work in progress and thus updates are due to come.
+Import the module from deno.land:
+
+```ts
+// Imports
+import { count } from "https://deno.land/x/vca/mod.ts";
+```
+
+Call it:
+
+```ts
+const visitorCount = await count("github.com", "octocat", "octocat");
+```
